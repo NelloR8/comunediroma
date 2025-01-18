@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +10,10 @@
 
 </head>
 <body >
-    <div align="center" >
-        
+ 
+    <div class="container-h1">
         <h1 >Riapre Piazza Risorgimento</h1>
+  
         <p class="tematica">
             <strong>Tematica:
             <a href="https://www.comune.roma.it/web/it/notizie.page?temat=giubileo">Giubileo</a> -
@@ -20,12 +22,13 @@
             </strong>
         <br>
         <data value=""><strong>20 dicembre 2024</strong> </data>
-        
-    </div>
+      </div>
     
-        
+    
+    <div class="st-img">
     <img src="https://www.comune.roma.it/web-resources/cms/images/inaugurazionepiazzarisorgimentodicembre2024_d0.jpg" alt="">
-
+    </div>
+ 
 
     <p >Sono terminati gli interventi di riqualificazione di Piazza Risorgimento, iniziati a settembre, 
         che hanno <br> reso l'area al 75 per cento pedonale. Oggi l'inaugurazione alla presenza del Sindaco Roberto Gualtieri,<br>
@@ -46,9 +49,9 @@
     <p>L'opera è finanziata con <strong>14 milioni di euro di fondi giubilari</strong> e si integra con gli interventi di via <br>
          Ottaviano e della stazione omonima.</p>
        
-
-    <img src="https://www.comune.roma.it/web-resources/cms/images/taglionastropiazzarisorgimento_d0.jpg" alt="">
-
+    <div class="st-img2">
+     <img src="https://www.comune.roma.it/web-resources/cms/images/taglionastropiazzarisorgimento_d0.jpg" alt="">
+    </div>
     <p> <i> "Siamo veramente grati e contenti che la piazza ritorni ad essere tale, non sarà più divisa ma sarà un <br>
         prolungamento tra il colonnato di San Pietro e via Ottaviano - ha sottolineato monsignor Fisichella -. È <br>
         l'opera più martoriata, perché è stata più volte ripensata, ma siamo contenti che torni a essere un <br>
@@ -70,8 +73,22 @@
            piazza era uno degli obiettivi, per farne un luogo non solo di passaggio ma di incontro. La parte <br>
             pedonale è aumentata dal 52 al 75%, è stata semipedonalizzata sul modello di piazza Cavour".</p></i>
             <br>
-
+    <div class="st-img3">
     <img src="https://www.comune.roma.it/web-resources/cms/images/infopointpiazzarisorgimento_d0.jpg" alt="">
+    </div>
+
+    <div class="map-container">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d376.59472198204054!2d12.456944102589132!3d41.90777802191827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f606d2445e6d7%3A0xb3e382810b518b92!2sPiazza%20del%20Risorgimento!5e0!3m2!1sit!2sit!4v1674132149923!5m2!1sit!2sit" 
+          allowfullscreen="" 
+          loading="lazy">
+      </iframe>
+    </div>
+
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CkWQ9rJ_6NI?si=iFBcOUyas6bYu89z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
 
     <footer>
         <div class="footer-container">
@@ -97,68 +114,193 @@
 
 
 
-footer {
-    width: 100%;
-  }
-  
-  .footer-container {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ody {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+   
+    align-items: left;
+    align-self: center;
+}
+
+.container-h1 {
+    font-size: 1em;
+    margin-bottom: 0px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .footer-red {
-    background-color: #800020; 
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 15px 0;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-  }
-  
-  .footer-dark {
-    background-color: #333333; 
-    height: 50px; 
+    align-items: center;
+    justify-content: center;
 }
 
-
-.body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align:center;
+.container .tematica {
+    font-size: 1.1em;
     color: #333;
+  margin: 0%;
 }
 
-.header h1 {
-    font-size: 36px;
+.st-img{
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.st-img2{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.st-img3{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+
+
+
+
+
+
+
+p {
+    max-width: max-content;
+    margin: 10px auto;
+    text-align: justify;
+    font-size: 1em;
+    padding: 0 15px;
+    align-items: center;
+    padding: 0%;
+    
+
+    
+
+}
+
+p i {
+    font-style: italic;
+    color: #555;
+}
+
+p strong {
     font-weight: bold;
-    color: #000; 
+    color: #000;
 }
 
-.tematica {
-    font-size: 16px;
-    margin: 10px 0;
-}
-
-.tematica strong {
-    font-weight: bold;
-    color: #333; 
-}
-
-.tematica a {
-    color: #800020; 
+a {
+    color: #960d0d;
     text-decoration: none;
 }
 
-.tematica a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-.data {
-    font-size: 14px;
-    color: #555;
-    margin-top: 5px;
+footer {
+    margin-top: 20px;
+    width: 100%;
 }
 
-.p{
-font-family: Arial, sans-serif;
+
+
+.footer-container {
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+.footer-red {
+    background-color: rgb(183, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.footer-dark {
+    background-color: #222;
+    height: 30px;
+    width: 100%;
+}
+
+.map-container{ display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+
+}
+
+
+.video-container {
+    width: 100%; 
+    max-width: 800px; 
+    margin: 20px auto; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+
+
+
+
+
+
+
